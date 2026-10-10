@@ -9,7 +9,7 @@ on:
     tags: ['v*']
 
 permissions:
-  contents: read
+  contents: write # create the GitHub release for the tag
   id-token: write # OIDC token for npm trusted publishing + provenance
 
 jobs:
@@ -31,3 +31,8 @@ jobs:
       # Staged publishing: the version goes live only after manual
       # promotion on npmjs.com (trusted publisher allows stage only)
       - run: npm stage publish
+
+      # GitHub release with auto-generated notes (skips if it already exists)
+      - run: gh release create "$GITHUB_REF_NAME" --generate-notes || true
+        env:
+          GH_TOKEN: ${{ github.token }}
