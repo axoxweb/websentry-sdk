@@ -1,0 +1,34 @@
+{
+  "name": "websentry-api",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript client for the WebSentry website security scanner API.",
+  "keywords": ["websentry", "security", "scanner", "ssl", "headers", "csp", "api", "monitoring"],
+  "homepage": "https://websentry.dev/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axoxweb/websentry-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axoxweb/websentry-sdk/issues"
+  },
+  "license": "MIT",
+  "author": "Axox Web Solutions <support@websentry.dev>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
