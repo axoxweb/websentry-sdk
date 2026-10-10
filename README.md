@@ -1,5 +1,10 @@
 # websentry-api
 
+[![npm](https://img.shields.io/npm/v/websentry-api?color=22c55e)](https://www.npmjs.com/package/websentry-api)
+[![Release](https://github.com/axoxweb/websentry-sdk/actions/workflows/release.yml/badge.svg)](https://github.com/axoxweb/websentry-sdk/actions/workflows/release.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+
 Official JavaScript/TypeScript client for the [WebSentry](https://websentry.dev) website security scanner. Scan any site for an A-F security grade across SSL, headers, CSP, cookies, DNS, and 15 categories in total.
 
 Zero dependencies. Works in Node 18+, browsers, and edge runtimes.
