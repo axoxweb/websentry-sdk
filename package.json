@@ -1,8 +1,17 @@
 {
   "name": "websentry-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official JavaScript/TypeScript client for the WebSentry website security scanner API.",
-  "keywords": ["websentry", "security", "scanner", "ssl", "headers", "csp", "api", "monitoring"],
+  "keywords": [
+    "websentry",
+    "security",
+    "scanner",
+    "ssl",
+    "headers",
+    "csp",
+    "api",
+    "monitoring"
+  ],
   "homepage": "https://websentry.dev/docs",
   "repository": {
     "type": "git",
@@ -22,12 +31,17 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "typescript": "^5.6.0"
   }
