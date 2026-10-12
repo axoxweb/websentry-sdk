@@ -1,6 +1,6 @@
 {
   "name": "websentry-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official JavaScript/TypeScript client for the WebSentry website security scanner API.",
   "keywords": [
     "websentry",
@@ -28,7 +28,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
   "files": [
@@ -44,5 +45,6 @@
   },
   "devDependencies": {
     "typescript": "^5.6.0"
-  }
+  },
+  "module": "./dist/index.js"
 }
